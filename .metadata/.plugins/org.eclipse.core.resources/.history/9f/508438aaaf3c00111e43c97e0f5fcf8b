@@ -1,0 +1,12 @@
+package com.ssafy.live.service;
+
+public class GuguService {
+	// 특정 서비스만 담당하고 있기 때문에 싱글톤으로 하는게 좋다
+	
+	public String gugu(int dan) {
+		StringBuilder sb = new StringBuilder();
+		for (int i = 1; i < 10; i++) {
+			
+		}
+	}
+}

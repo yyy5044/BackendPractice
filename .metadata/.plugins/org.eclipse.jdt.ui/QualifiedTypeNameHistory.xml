@@ -5,4 +5,5 @@
     <fullyQualifiedTypeName name="com.ssafy.live.controller.ControllerHelper"/>
     <fullyQualifiedTypeName name="java.util.Arrays"/>
     <fullyQualifiedTypeName name="java.lang.Integer"/>
+    <fullyQualifiedTypeName name="com.ssafy.live.service.GuguService"/>
 </qualifiedTypeNameHistroy>
