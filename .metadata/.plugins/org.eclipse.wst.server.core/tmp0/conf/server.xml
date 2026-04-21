@@ -136,7 +136,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="C:\SSAFY\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="C:\SSAFY\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\BE_02" path="/BE_02" reloadable="true" source="org.eclipse.jst.jee.server:BE_02"/><Context docBase="C:\SSAFY\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\BACK_DB_WS_01_2" path="/BACK_DB_WS_01_2" reloadable="true" source="org.eclipse.jst.jee.server:BACK_DB_WS_01_2"/><Context docBase="C:\SSAFY\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\BE_03_lab" path="/BE_03" reloadable="true" source="org.eclipse.jst.jee.server:BE_03_lab"/></Host>
+      <Context docBase="C:\SSAFY\BackendPractice\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="C:\SSAFY\BackendPractice\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\BE_04_lab" path="/BE_04" reloadable="true" source="org.eclipse.jst.jee.server:BE_04_lab"/></Host>
     </Engine>
   </Service>
 </Server>
