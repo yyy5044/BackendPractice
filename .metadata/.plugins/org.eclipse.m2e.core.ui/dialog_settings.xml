@@ -50,6 +50,8 @@
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="BACK_DB_WS_01_2"/>
+			<item value="BACK_DB_WS_01_3"/>
 			<item value="BE_01"/>
 			<item value="BE_02"/>
 		</list>
