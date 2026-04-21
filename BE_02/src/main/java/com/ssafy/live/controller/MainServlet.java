@@ -34,8 +34,13 @@ public class MainServlet extends HttpServlet implements ControllerHelper {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String action = preProcessing(request, response);
 		switch(action) {
-			
+		case "write" -> write(request, response);
 		}
+	}
+	
+	protected void write(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		String content = request.getParameter("content");
+		responseHtml("입력한 내용", content, response);
 	}
 	
 	protected void guguform(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

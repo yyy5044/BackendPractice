@@ -1,2 +1,3 @@
-2026/04/20-19:39:47.599 5384 Creating DB C:\SSAFY\BackendPractice\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Local Storage\leveldb since it was missing.
-2026/04/20-19:39:47.650 5384 Reusing MANIFEST C:\SSAFY\BackendPractice\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Local Storage\leveldb/MANIFEST-000001
+2026/04/21-09:43:29.637 443c Reusing MANIFEST C:\SSAFY\workspace\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Local Storage\leveldb/MANIFEST-000001
+2026/04/21-09:43:29.643 443c Recovering log #3
+2026/04/21-09:43:29.645 443c Reusing old log C:\SSAFY\workspace\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Local Storage\leveldb/000003.log 

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>글쓰기</h1>
+	<form action="/BE_02/main" method="post">
+		<input type="hidden" name="action" value="write">
+		<textarea rows="5" cols="200"></textarea>
+		<button>전송</button>
+	</form>
+</body>
+</html>
