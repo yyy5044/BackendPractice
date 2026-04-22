@@ -1,4 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="jakarta.tags.core" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,22 +9,25 @@
 <body>
     <div class="container">
         <%
-    pageContext.setAttribute("name", "hong");
-    request.setAttribute("org", "ssafy");
-    session.setAttribute("name", "jang");
+    // pageContext.setAttribute("name", "hong");
+    // request.setAttribute("org", "ssafy");
+    session.setAttribute("name", "jang"); // 나머진 알아서 해보세요
     application.setAttribute("loc", "seoul");
         %>
         <!-- TODO: 11. 위 코드를 JSTL로 대체하고 context 경로명을 출력해보자. -->
-
+		<c:set var="name" value="hong" scope="page"/>
+        <c:set var="org" value="ssafy"/>
+        <c:set var="root" value="${pageContext.request.contextPath}"/>
+        ${root }
         <!-- END -->
 
         <h2>EL 기본</h2>
         <ul>
             <!-- TODO: 08. 원하는 값을 출력해보세요. -->
-        <li>hong:</li>
-        <li>jang:</li>
-        <li>ssafy:</li>
-        <li>addr:</li>
+        <li>hong: ${name }</li>
+        <li>jang: ${sessionScope.name }</li>
+        <li>ssafy:${org }</li>
+        <li>addr: ${addr }</li>
 
             <!-- END -->
         </ul>
@@ -36,7 +40,11 @@
 </script>
 
 <!-- TODO: 09. ``를 이용해서 "message: I am in SSAFY" 형태로 출력해보자. -->
- <script></script>
+ <script>
+ 	let message2 =`message: \${message}`
+ 	console.log(message2)
+ 	
+ </script>
 
 <!-- END -->
 </html>
