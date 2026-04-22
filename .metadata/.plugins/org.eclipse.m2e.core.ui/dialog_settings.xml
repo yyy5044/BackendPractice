@@ -80,6 +80,7 @@
 	</section>
 	<section name="org.eclipse.m2e.core.pom.dependencies">
 	</section>
+<<<<<<< HEAD
 	<section name="wizardPage">
 		<list key="groupId">
 			<item value="com.ssafy"/>
@@ -96,6 +97,11 @@
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
 			<item value="C:\SSAFY\BackendPractice\BE_04_lab"/>
+=======
+	<section name="MavenProjectImportWizardPage">
+		<list key="rootDirectory">
+			<item value="C:\SSAFY\workspace"/>
+>>>>>>> e0316fcd4e3c94534fc5fe8b8d3c25ad157cb397
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>

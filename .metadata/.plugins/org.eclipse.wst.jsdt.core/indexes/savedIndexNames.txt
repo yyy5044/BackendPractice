@@ -1,6 +1,10 @@
-INDEX VERSION 1.4+C:\SSAFY\BackendPractice\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
-1493442095.index
-3834159050.index
+INDEX VERSION 1.4+C:\SSAFY\workspace\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+872858871.index
+647757555.index
 2903479629.index
 3945054783.index
+<<<<<<< HEAD
 872858871.index
+=======
+1493442095.index
+>>>>>>> e0316fcd4e3c94534fc5fe8b8d3c25ad157cb397

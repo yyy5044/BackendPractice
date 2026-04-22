@@ -26,10 +26,15 @@
         <ul>
             <!-- TODO: 10. param 정보와 user의 정보를 출력해보자. -->
             <!--  param을 통해 name, email을 사용해보자. -->
+            <li>${param.name}</li>
+            <li>${param.email}</li>
             <!--  request scope의 user 정보가 가진 name, email 속성을 확인해보자. -->
+            <li>${user.name}</li>
+            <li>${user.email}</li>
             <!--  header 정보 중 accept-language를 출력해보자. -->
+            <li>${header["accept-language"]}</li>
             <!--  friends가 몇 명인지 출력해보자. -->
-
+			<li>${friends.size()}</li>
             <!-- END -->
         </ul>
     </div>

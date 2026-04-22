@@ -11,7 +11,13 @@
         <!-- TODO: 12. parameter loginUser에 따라 별도의 화면을 출력하세요. -->
         <!--  값이 있는 경우- 사용자에 대한 welcome message를 출력한다. -->
         <!--  값이 없는 경우- 로그인을 위한 화면을 출력한다. -->
-
+		<c:if test="${!empty param.loginUser }">
+			${param.loginUser } 님 반갑습니다.
+		</c:if>
+		
+		<c:if test="${empty param.loginUser}">
+			파라미터가 전달되지 않음
+		</c:if>
         <!-- END -->
         <hr>
 
