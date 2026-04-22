@@ -7,6 +7,7 @@
 <title>simple el</title>
 </head>
 <body>
+    <%@ include file="/fragments/header.jsp" %>
     <div class="container">
         <%
     // pageContext.setAttribute("name", "hong");

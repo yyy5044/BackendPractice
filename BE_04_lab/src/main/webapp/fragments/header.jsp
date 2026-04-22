@@ -11,13 +11,13 @@
     <div>
         <!-- TODO: 16. 다음의 링크들을 구성해보자. -->
         <!--  홈으로: / -->
-        <a herf="${root }">홈으로</a>
+        <a href="${root}">홈으로</a>
         <!--  멤버 목록: /auth?action=member-list-->
-        <a herf="${root }/auth?action=member-list">멤버 목록</a>
+        <a href="${root}/auth?action=member-list">멤버 목록</a>
         <!--  멤버 가입: /member?action=member-regist-form-->
-        <a herf="${root }/member?action=member-regist-form">맴버 가입</a>
+        <a href="${root}/member?action=member-regist-form">맴버 가입</a>
         <!--  목록 초기화: /member?action=member-list-reset -->
-		<a herf="${root }/member?action=member-list-reset">목록 초기화</a>
+		<a href="${root}/member?action=member-list-reset">목록 초기화</a>
 		
         <!-- END -->
     </div>

@@ -1,5 +1,0 @@
-package com.ssafy.live.controller;
-
-public interface ControllerHelper {
-
-}

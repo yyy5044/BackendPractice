@@ -44,7 +44,8 @@ public class AuthController extends HttpServlet implements ControllerHelper {
             throws ServletException, IOException {
         // TODO: 19. 전체 Member의 정보를 반환해보자.
         //  /member/member-list.jsp에서 확인하세요.
-
+    	List<Member> members = mService.search();
+    	request.setAttribute("members", members);
         // END
         forward(request, response, "/member/member-list.jsp");
     }

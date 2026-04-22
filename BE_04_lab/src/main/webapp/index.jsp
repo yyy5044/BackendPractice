@@ -8,7 +8,7 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
-    <% include file="/fragments/header.jsp" %>
+    <%@ include file="/fragments/header.jsp" %>
     <div class="container">
         <%
         request.setAttribute("root", request.getContextPath());
@@ -30,7 +30,7 @@
             <li><a href="${root }/basic/jstl_foreach.jsp">jstl foreach</a></li>
         </ul>
     </div>
-     
+    <%@ include file="/fragments/footer.jsp" %>
 </body>
 
 
