@@ -14,12 +14,7 @@
             <legend>구매 대상 항목</legend>
             <div>
                 <!-- TODO: 14-1. session에 cart attribute가 있다면 출력하세요. -->
-				<c:if test="${empty cart }">
-					카트가 비어있어요.
-				</c:if>
-				<c:if test="${!empty cart }">
-					${cart }
-				</c:if>
+
                 <!-- END -->
             </div>
         </fieldset>

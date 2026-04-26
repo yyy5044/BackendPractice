@@ -42,9 +42,6 @@ public class AuthController extends HttpServlet implements ControllerHelper {
 
     private void memberList(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-    	
-    	
-    	
         List<Member> members = mService.search();
         request.setAttribute("members", members);
         forward(request, response, "/member/member-list.jsp");
