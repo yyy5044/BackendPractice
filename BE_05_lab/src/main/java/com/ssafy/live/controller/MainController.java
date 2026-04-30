@@ -44,8 +44,8 @@ public class MainController extends HttpServlet implements ControllerHelper {
         // TODO: 18. exception 요청을 확인하세요. 
         case "exception" -> exception(request, response);
         // 오류 처리 방식: 잘못된 action 요청이 들어오면 404 에러를 발생
-        default -> forward(request, response, "/error/404.jsp");
-        //default -> response.sendError(HttpServletResponse.SC_NOT_FOUND); // 404 처리
+        //default -> forward(request, response, "/error/404.jsp");
+        default -> response.sendError(HttpServletResponse.SC_NOT_FOUND); // 404 처리
         }
     }
 
@@ -88,16 +88,15 @@ public class MainController extends HttpServlet implements ControllerHelper {
             Cookie[] cookies = request.getCookies();
             String preValue = "";
             if(cookies!=null) {
-            	for(Cookie c: cookies) {
-            		if(c.getName().equals("recentGugu")) {
+            	for (Cookie c: cookies) {
+            		if (c.getName().equals("recentGugu")) {
             			preValue = c.getValue();
             			break;
             		}
             	}
             }
-            String newValue = preValue.isEmpty()?preValue+dan: preValue+"-"+dan;
+            String newValue = preValue.isEmpty() ? preValue+dan : preValue+"-"+dan;
             setupCookie("recentGugu", newValue, 60*10, null, response);
-            
             // END
             forward(request, response, "/gugu/gugu-result.jsp");
         } catch (NumberFormatException e) {
@@ -118,15 +117,7 @@ public class MainController extends HttpServlet implements ControllerHelper {
         // TODO: 16. 파라미터인 product를 session의 cart attribute에 추가하세요.
         //  cart는 Map<String, Integer> 타입이다.
         //  처리 후 redirect로 /main?action=cart-form로 이동하세요.
-        HttpSession session = request.getSession();
-        Map<String, Integer> cart = (Map) session.getAttribute("cart");
-        if(cart == null ){
-        	cart = new HashMap<>();
-        	session.setAttribute("cart", cart);
-        }
-        
-        cart.merge(product, 1, (ov, nv) -> ov + nv);
-        redirect(request, response, "/main?action=cart-form");
+
         // END
     }
 
@@ -134,10 +125,7 @@ public class MainController extends HttpServlet implements ControllerHelper {
             throws ServletException, IOException {
         // TODO: 17. session에 담긴 cart를 삭제하고 'alertMsg'를 키로 '구매 완료'를 전송하세요.
         //  처리 후 redirect로 /main?action=cart-form로 이동하세요.
-    	HttpSession session = request.getSession();
-    	session.removeAttribute("cart");
-    	session.setAttribute("alertMsg", "구매 완료");
-    	redirect(request, response, "/main?action=cart-form");
+
         // END
     }
 

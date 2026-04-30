@@ -37,7 +37,7 @@ public interface ControllerHelper {
     	Cookie c = new Cookie(name, value);
     	c.setMaxAge(maxAge);
     	c.setPath(path);
-    	resp.addCookie(c); // 내려보내주기
+    	resp.addCookie(c);
         // END
     }
 }

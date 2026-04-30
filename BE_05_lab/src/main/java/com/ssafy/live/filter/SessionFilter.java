@@ -19,12 +19,13 @@ public class SessionFilter extends HttpFilter {
 	protected void doFilter(HttpServletRequest req, HttpServletResponse res, FilterChain chain)
 			throws IOException, ServletException {
 		HttpSession session = req.getSession();
-		if(session.getAttribute("loginUser") != null) {
+		if (session.getAttribute("loginUser") != null) {
 			chain.doFilter(req, res);
 		} else {
-			session.setAttribute("alertMsg", "로그인을 후 사용해주세요.");
+			session.setAttribute("alertMsg", "로그인 후 사용해주세요");
 			res.sendRedirect(req.getContextPath()+"/member?action=login-form");
 		}
 	}
 }
+
 // END
